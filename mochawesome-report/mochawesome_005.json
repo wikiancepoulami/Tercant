@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-29T11:32:19.708Z",
+    "end": "2022-07-29T11:32:29.583Z",
+    "duration": 9875,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a9fe2119-2e2b-40f1-95b1-04e635ff4892",
+      "title": "",
+      "fullFile": "cypress\\e2e\\registration.cy.js",
+      "file": "cypress\\e2e\\registration.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "32ef14ce-1136-45ef-8450-020d9317d070",
+          "title": "Do stuff on one site then visit another and check it worked",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tercant page visit",
+              "fullTitle": "Do stuff on one site then visit another and check it worked Tercant page visit",
+              "timedOut": null,
+              "duration": 1978,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registrationpage.navigate('https://stg.tercant.com/');",
+              "err": {},
+              "uuid": "5c7cf519-110b-4ca0-a631-2e95a3c19461",
+              "parentUUID": "32ef14ce-1136-45ef-8450-020d9317d070",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tercant registration page testing",
+              "fullTitle": "Do stuff on one site then visit another and check it worked Tercant registration page testing",
+              "timedOut": null,
+              "duration": 4227,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registrationpage.clickCreateyourorganizationbutton();\nregistrationpage.enterYourfirstname('Soumi');\nregistrationpage.enterYourlastname('Roy');\nregistrationpage.enterWorkemail('yuddjjjyzfgtl@arxxwalls.com');\nregistrationpage.enterCompanyname('ABCD');\nregistrationpage.enterDesignation('Software Developer');\nregistrationpage.enterChoosepassword('Abcd@12345');\nregistrationpage.enterConfirmpassword('Abcd@12345');\nregistrationpage.clickThecheckbox();\nregistrationpage.clickAgreeandstartbutton(); // registrationpage.navigate('https://stg.tercant.com/');\n// registrationpage.enterVerificationcode();\n// registrationpage.clickValidateotp();",
+              "err": {},
+              "uuid": "6a4ee826-29b1-4559-af42-3aa35df54029",
+              "parentUUID": "32ef14ce-1136-45ef-8450-020d9317d070",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5c7cf519-110b-4ca0-a631-2e95a3c19461",
+            "6a4ee826-29b1-4559-af42-3aa35df54029"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6205,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "trashAssetsBeforeRuns": true,
+        "screenshotOnRunFailure": true,
+        "screenshotsFolder": "cypress/screenshots"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

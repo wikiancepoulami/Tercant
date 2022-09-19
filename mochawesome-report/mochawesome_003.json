@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-29T11:28:04.752Z",
+    "end": "2022-07-29T11:28:14.362Z",
+    "duration": 9610,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7fc82a45-0893-42ac-9b00-bcc633e38df6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\registration.cy.js",
+      "file": "cypress\\e2e\\registration.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6dec64cb-70b5-4575-af3c-180604633ad1",
+          "title": "Do stuff on one site then visit another and check it worked",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tercant page visit",
+              "fullTitle": "Do stuff on one site then visit another and check it worked Tercant page visit",
+              "timedOut": null,
+              "duration": 2072,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registrationpage.navigate('https://stg.tercant.com/');",
+              "err": {},
+              "uuid": "9f1fef8f-3bd3-4590-8f69-ed49d40508cf",
+              "parentUUID": "6dec64cb-70b5-4575-af3c-180604633ad1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tercant registration page testing",
+              "fullTitle": "Do stuff on one site then visit another and check it worked Tercant registration page testing",
+              "timedOut": null,
+              "duration": 4135,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registrationpage.clickCreateyourorganizationbutton();\nregistrationpage.enterYourfirstname('Soumi');\nregistrationpage.enterYourlastname('Roy');\nregistrationpage.enterWorkemail('yuddjjjyzfgtl@arxxwalls.com');\nregistrationpage.enterCompanyname('ABCD');\nregistrationpage.enterDesignation('Software Developer');\nregistrationpage.enterChoosepassword('Abcd@12345');\nregistrationpage.enterConfirmpassword('Abcd@12345');\nregistrationpage.clickThecheckbox();\nregistrationpage.clickAgreeandstartbutton(); // registrationpage.navigate('https://stg.tercant.com/');\n// registrationpage.enterVerificationcode();\n// registrationpage.clickValidateotp();",
+              "err": {},
+              "uuid": "88dd420b-0ca8-4763-bfa8-f9d687e5bff8",
+              "parentUUID": "6dec64cb-70b5-4575-af3c-180604633ad1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9f1fef8f-3bd3-4590-8f69-ed49d40508cf",
+            "88dd420b-0ca8-4763-bfa8-f9d687e5bff8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6207,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "trashAssetsBeforeRuns": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
